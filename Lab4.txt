@@ -1,0 +1,87 @@
+//
+// Source code recreated from a .class file by IntelliJ IDEA
+// (powered by Fernflower decompiler)
+//
+
+import java.util.Scanner;
+
+public class Lab4 {
+    public Lab4() {
+    }
+
+    public static void main(String[] args) {
+        Scanner scnr = new Scanner(System.in);
+        System.out.print("Enter a hexadecimal number: ");
+        String userInput = scnr.nextLine();
+        int total = 0;
+
+        for(int i = 0; i < userInput.length(); ++i) {
+            int valueChar = 0;
+            if (userInput.charAt(i) == '0') {
+                valueChar = (int)(0.0D * Math.pow(16.0D, (double)(userInput.length() - 1 - i)));
+            }
+
+            if (userInput.charAt(i) == '1') {
+                valueChar = (int)(1.0D * Math.pow(16.0D, (double)(userInput.length() - 1 - i)));
+            }
+
+            if (userInput.charAt(i) == '2') {
+                valueChar = (int)(2.0D * Math.pow(16.0D, (double)(userInput.length() - 1 - i)));
+            }
+
+            if (userInput.charAt(i) == '3') {
+                valueChar = (int)(3.0D * Math.pow(16.0D, (double)(userInput.length() - 1 - i)));
+            }
+
+            if (userInput.charAt(i) == '4') {
+                valueChar = (int)(4.0D * Math.pow(16.0D, (double)(userInput.length() - 1 - i)));
+            }
+
+            if (userInput.charAt(i) == '5') {
+                valueChar = (int)(5.0D * Math.pow(16.0D, (double)(userInput.length() - 1 - i)));
+            }
+
+            if (userInput.charAt(i) == '6') {
+                valueChar = (int)(6.0D * Math.pow(16.0D, (double)(userInput.length() - 1 - i)));
+            }
+
+            if (userInput.charAt(i) == '7') {
+                valueChar = (int)(7.0D * Math.pow(16.0D, (double)(userInput.length() - 1 - i)));
+            }
+
+            if (userInput.charAt(i) == '8') {
+                valueChar = (int)(8.0D * Math.pow(16.0D, (double)(userInput.length() - 1 - i)));
+            }
+
+            if (userInput.charAt(i) == '9') {
+                valueChar = (int)(9.0D * Math.pow(16.0D, (double)(userInput.length() - 1 - i)));
+            }
+
+            if (userInput.charAt(i) == 'A') {
+                valueChar = (int)(10.0D * Math.pow(16.0D, (double)(userInput.length() - 1 - i)));
+            } else if (userInput.charAt(i) == 'B') {
+                valueChar = (int)(11.0D * Math.pow(16.0D, (double)(userInput.length() - 1 - i)));
+            }
+
+            if (userInput.charAt(i) == 'C') {
+                valueChar = (int)(12.0D * Math.pow(16.0D, (double)(userInput.length() - 1 - i)));
+            }
+
+            if (userInput.charAt(i) == 'D') {
+                valueChar = (int)(13.0D * Math.pow(16.0D, (double)(userInput.length() - 1 - i)));
+            }
+
+            if (userInput.charAt(i) == 'E') {
+                valueChar = (int)(14.0D * Math.pow(16.0D, (double)(userInput.length() - 1 - i)));
+            }
+
+            if (userInput.charAt(i) == 'F') {
+                valueChar = (int)(15.0D * Math.pow(16.0D, (double)(userInput.length() - 1 - i)));
+            }
+
+            total += valueChar;
+        }
+
+        System.out.println("Your number is " + total + " in decimal");
+    }
+}
